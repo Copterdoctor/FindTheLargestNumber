@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		17CE88BD205969D300F5D750 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 17CE88BC205969D300F5D750 /* main.m */; };
+		17CE88C520596A2100F5D750 /* FindLargestNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 17CE88C420596A2100F5D750 /* FindLargestNumber.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		17CE88B9205969D300F5D750 /* ReturnHighestNumber */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ReturnHighestNumber; sourceTree = BUILT_PRODUCTS_DIR; };
 		17CE88BC205969D300F5D750 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		17CE88C320596A2100F5D750 /* FindLargestNumber.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindLargestNumber.h; sourceTree = "<group>"; };
+		17CE88C420596A2100F5D750 /* FindLargestNumber.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FindLargestNumber.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				17CE88BC205969D300F5D750 /* main.m */,
+				17CE88C320596A2100F5D750 /* FindLargestNumber.h */,
+				17CE88C420596A2100F5D750 /* FindLargestNumber.m */,
 			);
 			path = ReturnHighestNumber;
 			sourceTree = "<group>";
@@ -119,6 +124,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17CE88C520596A2100F5D750 /* FindLargestNumber.m in Sources */,
 				17CE88BD205969D300F5D750 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
