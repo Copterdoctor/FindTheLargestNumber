@@ -30,7 +30,7 @@ int main(int argc, const char * argv[]) {
         NSLog(@"The length of this array is %ld",[randomArray count]);
         NSLog(@"%@",sortedArray);
         
-        //NSLog highest number from array passed to function [FindLargestNumber largestNumberInArray: ]
+        //NSLog highest number from array passed to method [FindLargestNumber largestNumberInArray: ]
         NSLog(@"The largest number in this array is %@",[FindLargestNumber largestNumberInArray:randomArray]);
         
     }
