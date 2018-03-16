@@ -27,8 +27,8 @@ int main(int argc, const char * argv[]) {
 
         NSLog(@"The length of this array is %ld",[randomArray count]);
         NSLog(@"%@",randomArray);
-        FindLargestNumber *X = [[FindLargestNumber alloc]init];
-        NSLog(@"The largest number in this array is %@",[X largestNumberInArray:randomArray]);
+        FindLargestNumber *x = [[FindLargestNumber alloc]init];
+        NSLog(@"The largest number in this array is %@",[x largestNumberInArray:randomArray]);
         
     }
     return 0;
