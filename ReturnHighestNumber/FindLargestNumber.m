@@ -10,7 +10,7 @@
 
 @implementation FindLargestNumber
 
--(NSNumber*) largestNumberInArray: array{
++(NSNumber*) largestNumberInArray: array{
 
     NSSortDescriptor *sorter = [[NSSortDescriptor alloc]initWithKey:@"self" ascending:NO];
     NSArray *sortedArray = [array sortedArrayUsingDescriptors:[NSArray arrayWithObject:sorter]];

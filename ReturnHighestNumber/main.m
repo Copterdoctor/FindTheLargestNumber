@@ -23,15 +23,15 @@ int main(int argc, const char * argv[]) {
             int n = arc4random_uniform(1000000000);
             [randomArray addObject:[NSNumber numberWithInt:n]];
         }
+        
+        //NSLog of generated random array for confirmation and sorted for readability
+        NSSortDescriptor *sorter = [[NSSortDescriptor alloc]initWithKey:@"self" ascending:YES];
+        NSArray *sortedArray = [randomArray sortedArrayUsingDescriptors:[NSArray arrayWithObject:sorter]];
         NSLog(@"The length of this array is %ld",[randomArray count]);
-        NSLog(@"%@",randomArray);
+        NSLog(@"%@",sortedArray);
         
-        //Create object from custom class FindLargestNumber
-        //TODO Init object with highest number instead of having to call with function
-        FindLargestNumber *x = [[FindLargestNumber alloc]init];
-        
-        //NSLog highest number from array passed to function largestNumberInArray
-        NSLog(@"The largest number in this array is %@",[x largestNumberInArray:randomArray]);
+        //NSLog highest number from array passed to function [FindLargestNumber largestNumberInArray: ]
+        NSLog(@"The largest number in this array is %@",[FindLargestNumber largestNumberInArray:randomArray]);
         
     }
     return 0;
