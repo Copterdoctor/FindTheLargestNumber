@@ -24,14 +24,22 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		17CE88B9205969D300F5D750 /* ReturnHighestNumber */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ReturnHighestNumber; sourceTree = BUILT_PRODUCTS_DIR; };
+		17CE88B9205969D300F5D750 /* ReturnHighestNumber */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = ReturnHighestNumber; path = /Users/jordan/Desktop/Lighthouse/ReturnHighestNumber/build/Debug/ReturnHighestNumber; sourceTree = "<absolute>"; };
 		17CE88BC205969D300F5D750 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		17CE88C320596A2100F5D750 /* FindLargestNumber.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindLargestNumber.h; sourceTree = "<group>"; };
 		17CE88C420596A2100F5D750 /* FindLargestNumber.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FindLargestNumber.m; sourceTree = "<group>"; };
+		17F88195206B2CF6004FD38D /* ReturnHighestNumberTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ReturnHighestNumberTest.xctest; path = /Users/jordan/Desktop/Lighthouse/ReturnHighestNumber/build/Debug/ReturnHighestNumberTest.xctest; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		17CE88B6205969D300F5D750 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17F88192206B2CF6004FD38D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -45,16 +53,7 @@
 			isa = PBXGroup;
 			children = (
 				17CE88BB205969D300F5D750 /* ReturnHighestNumber */,
-				17CE88BA205969D300F5D750 /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		17CE88BA205969D300F5D750 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				17CE88B9205969D300F5D750 /* ReturnHighestNumber */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		17CE88BB205969D300F5D750 /* ReturnHighestNumber */ = {
@@ -87,6 +86,23 @@
 			productReference = 17CE88B9205969D300F5D750 /* ReturnHighestNumber */;
 			productType = "com.apple.product-type.tool";
 		};
+		17F88194206B2CF6004FD38D /* ReturnHighestNumberTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17F8819C206B2CF6004FD38D /* Build configuration list for PBXNativeTarget "ReturnHighestNumberTest" */;
+			buildPhases = (
+				17F88191206B2CF6004FD38D /* Sources */,
+				17F88192206B2CF6004FD38D /* Frameworks */,
+				17F88193206B2CF6004FD38D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReturnHighestNumberTest;
+			productName = ReturnHighestNumberTest;
+			productReference = 17F88195206B2CF6004FD38D /* ReturnHighestNumberTest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -100,6 +116,10 @@
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
+					17F88194206B2CF6004FD38D = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 17CE88B4205969D300F5D750 /* Build configuration list for PBXProject "ReturnHighestNumber" */;
@@ -110,14 +130,25 @@
 				en,
 			);
 			mainGroup = 17CE88B0205969D300F5D750;
-			productRefGroup = 17CE88BA205969D300F5D750 /* Products */;
+			productRefGroup = 17CE88B0205969D300F5D750;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				17CE88B8205969D300F5D750 /* ReturnHighestNumber */,
+				17F88194206B2CF6004FD38D /* ReturnHighestNumberTest */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		17F88193206B2CF6004FD38D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		17CE88B5205969D300F5D750 /* Sources */ = {
@@ -126,6 +157,13 @@
 			files = (
 				17CE88C520596A2100F5D750 /* FindLargestNumber.m in Sources */,
 				17CE88BD205969D300F5D750 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17F88191206B2CF6004FD38D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +289,30 @@
 			};
 			name = Release;
 		};
+		17F8819A206B2CF6004FD38D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ReturnHighestNumberTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jordan-Anders.ReturnHighestNumberTest";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		17F8819B206B2CF6004FD38D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ReturnHighestNumberTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jordan-Anders.ReturnHighestNumberTest";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -268,6 +330,15 @@
 			buildConfigurations = (
 				17CE88C1205969D300F5D750 /* Debug */,
 				17CE88C2205969D300F5D750 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17F8819C206B2CF6004FD38D /* Build configuration list for PBXNativeTarget "ReturnHighestNumberTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17F8819A206B2CF6004FD38D /* Debug */,
+				17F8819B206B2CF6004FD38D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -10,13 +10,21 @@
 
 @implementation FindLargestNumber
 
-+(NSNumber*) largestNumberInArray: array{
++(NSNumber*) largestNumberInArray: (NSArray *) array{
 
-    NSSortDescriptor *sorter = [[NSSortDescriptor alloc]initWithKey:@"self" ascending:NO];
-    NSArray *sortedArray = [array sortedArrayUsingDescriptors:[NSArray arrayWithObject:sorter]];
-    NSNumber *n = [sortedArray objectAtIndex:0];
+//    //NS Sorting Method
+//    NSSortDescriptor *sorter = [[NSSortDescriptor alloc]initWithKey:@"self" ascending:NO];
+//    NSArray *sortedArray = [array sortedArrayUsingDescriptors:[NSArray arrayWithObject:sorter]];
+//    NSNumber *n = [sortedArray objectAtIndex:0];
     
-    return n;
+//    Jordans manual method
+    NSMutableArray *tempArray = [[NSMutableArray alloc]initWithObjects:@0, nil];
+    
+    for (int i = 0; i != [array count]; i++) {
+        if (array[i] > tempArray[0])
+            [tempArray replaceObjectAtIndex:0 withObject:array[i]];
+    }
+    return tempArray[0];
 }
 
 @end

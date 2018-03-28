@@ -16,11 +16,12 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        //Creating a random array < 100 objects with random numbers < 1,000,000,000 in value
+        //Creating a random array 1 < n < 51 objects with random numbers <= 1,000 in value
         NSMutableArray *randomArray = [[NSMutableArray alloc]init];
-        int randomLengthOfArray = arc4random_uniform(100);
+        //+2 added because I don't want 0 or 1 to be a possible array length
+        int randomLengthOfArray = arc4random_uniform(48)+2;
         for (int i = 0; i < randomLengthOfArray; i++) {
-            int n = arc4random_uniform(1000000000);
+            int n = arc4random_uniform(1000);
             [randomArray addObject:[NSNumber numberWithInt:n]];
         }
         
@@ -29,7 +30,7 @@ int main(int argc, const char * argv[]) {
         NSArray *sortedArray = [randomArray sortedArrayUsingDescriptors:[NSArray arrayWithObject:sorter]];
         NSLog(@"The length of this array is %ld",[randomArray count]);
         NSLog(@"%@",sortedArray);
-        
+
         //NSLog highest number from array passed to method [FindLargestNumber largestNumberInArray: ]
         NSLog(@"The largest number in this array is %@",[FindLargestNumber largestNumberInArray:randomArray]);
         

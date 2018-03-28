@@ -10,6 +10,6 @@
 
 @interface FindLargestNumber : NSObject
 
-+(NSNumber*) largestNumberInArray: array;
++(NSNumber*) largestNumberInArray: (NSArray *) array;
 
 @end
