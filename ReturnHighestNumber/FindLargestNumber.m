@@ -20,7 +20,7 @@
 //    Jordans manual method
     NSMutableArray *tempArray = [[NSMutableArray alloc]initWithObjects:@0, nil];
     
-    for (int i = 0; i != [array count]; i++) {
+    for (int i = 0; i < [array count]; i++) {
         if (array[i] > tempArray[0])
             [tempArray replaceObjectAtIndex:0 withObject:array[i]];
     }
