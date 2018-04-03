@@ -21,16 +21,17 @@ int main(int argc, const char * argv[]) {
         //+2 added because I don't want 0 or 1 to be a possible array length
         int randomLengthOfArray = arc4random_uniform(48)+2;
         for (int i = 0; i < randomLengthOfArray; i++) {
-            int n = arc4random_uniform(1000);
+            int n = arc4random_uniform(1000) * -1;
             [randomArray addObject:[NSNumber numberWithInt:n]];
+            int nn = arc4random_uniform(1000);
+            [randomArray addObject:[NSNumber numberWithInt:nn]];
         }
-        
         //NSLog of generated random array for confirmation and sorted for readability
         NSSortDescriptor *sorter = [[NSSortDescriptor alloc]initWithKey:@"self" ascending:YES];
         NSArray *sortedArray = [randomArray sortedArrayUsingDescriptors:[NSArray arrayWithObject:sorter]];
         NSLog(@"The length of this array is %ld",[randomArray count]);
         NSLog(@"%@",sortedArray);
-
+        
         //NSLog highest number from array passed to method [FindLargestNumber largestNumberInArray: ]
         NSLog(@"The largest number in this array is %@",[FindLargestNumber largestNumberInArray:randomArray]);
         
