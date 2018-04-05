@@ -18,7 +18,7 @@
 //        NSNumber *highestNumber = [sortedArray objectAtIndex:0];
     
 //    Fast Enumeration of array
-    NSNumber *highestNSNumber = 0;
+    NSNumber *highestNSNumber = array[0];
     for (NSNumber *i in array){
         if ([highestNSNumber compare:i] != NSOrderedDescending) {
             highestNSNumber = i;

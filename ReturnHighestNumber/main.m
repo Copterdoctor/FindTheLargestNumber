@@ -23,8 +23,8 @@ int main(int argc, const char * argv[]) {
         for (int i = 0; i < randomLengthOfArray; i++) {
             int n = arc4random_uniform(1000) * -1;
             [randomArray addObject:[NSNumber numberWithInt:n]];
-            int nn = arc4random_uniform(1000);
-            [randomArray addObject:[NSNumber numberWithInt:nn]];
+//            int nn = arc4random_uniform(1000);
+//            [randomArray addObject:[NSNumber numberWithInt:nn]];
         }
         //NSLog of generated random array for confirmation and sorted for readability
         NSSortDescriptor *sorter = [[NSSortDescriptor alloc]initWithKey:@"self" ascending:YES];
